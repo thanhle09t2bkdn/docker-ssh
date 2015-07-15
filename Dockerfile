@@ -12,7 +12,6 @@ RUN \
     sed -i -r 's/.?UseDNS\syes/UseDNS no/' /etc/ssh/sshd_config && \
     sed -i -r 's/.?ChallengeResponseAuthentication.+/ChallengeResponseAuthentication no/' /etc/ssh/sshd_config && \
     sed -i -r 's/.?PermitRootLogin.+/PermitRootLogin yes/' /etc/ssh/sshd_config
-RUN sudo yum install httpd
 
 ENV ROOT_PASS root
 
